@@ -1,2 +1,2 @@
-# nftMint
-NFT Minting DApp 
+# NFT Minting DApp
+ 
