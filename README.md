@@ -4,13 +4,13 @@
 
 **1. To start the project we will use the hardhat** 
 
-  - npm init -y
+       - npm init -y
 
-  - npm add hardhat -D
+       - npm add hardhat -D
 
-  - npx hardhat
+       - npx hardhat
 
-  - npx hardhat test
+       - npx hardhat test
 
 **2. Connect Metamask & Alchemy** 
 
