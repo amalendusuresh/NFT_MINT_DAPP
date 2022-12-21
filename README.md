@@ -1,6 +1,9 @@
 # NFT Minting DApp
 
+
 **Building NFT Minting DApp from Scratch**
+
+
 
 **1. To start the project we will use the hardhat** 
 
@@ -11,6 +14,8 @@
        - npx hardhat
 
        - npx hardhat test
+       
+       
 
 **2. Connect Metamask & Alchemy** 
 
@@ -73,7 +78,7 @@ scripts/deploy.js
 
         artifacts\contracts\nftMint.sol\nftMint.json
 
-  - Contract address - will get from step 5
+        Contract address - will get from step 5
 
 **8. Update src\App.js** 
 
