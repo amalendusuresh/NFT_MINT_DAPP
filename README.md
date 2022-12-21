@@ -14,11 +14,11 @@
 
 **2. Connect Metamask & Alchemy** 
 
-  Download and create a Metamask account.
+  - Download and create a Metamask account.
 
-  Once you have an account, make sure to switch to the "Goerli Test Network" in the upper right.
+  - Once you have an account, make sure to switch to the "Goerli Test Network" in the upper right.
 
-  Acquire some GoerliETH
+  - Acquire some GoerliETH
   
 
   From Alchemy's dashboard,
@@ -35,57 +35,57 @@
 
 **3. Update .env file in the root directory** 
 
-  API\_URL = "https://eth-goerli.g.alchemy.com/v2/your-api-key"
+      API\_URL = "https://eth-goerli.g.alchemy.com/v2/your-api-key"
 
-  PRIVATE\_KEY = "your-metamask-private-key"
+      PRIVATE\_KEY = "your-metamask-private-key"
 
 **4. Deployment script** 
 
 scripts/deploy.js
 
-  Provide baseTokenURI - the link of the image that is stored IPFS/cloud
+  - Provide baseTokenURI - the link of the image that is stored IPFS/cloud
 
-  Here, we used Pinata for storing the image.
+  - Here, we used Pinata for storing the image.
 
-  Write the deployment script as per your contract details..
+  - Write the deployment script as per your contract details..
 
 **5. Compile and Deploy** 
 
-  npx hardhat compile
+  - npx hardhat compile
 
-  npx hardhat run scripts/deploy.js --network goerli
+  - npx hardhat run scripts/deploy.js --network goerli
 
   OR
 
-  Compile and deploy via Remix IDE.
+  - Compile and deploy via Remix IDE.
 
 **6. Frontend Implementation** 
 
-  npx create-react-app nft\_mint\_frontend
+  - npx create-react-app nft\_mint\_frontend
 
-  cd nft\_mint\_frontend
+  - cd nft\_mint\_frontend
 
-  npm start
+  - npm start
 
 **7. Getting contract ABI and address** 
 
-  To find your ABI file, go to your hardhat project and navigate to
+  - To find your ABI file, go to your hardhat project and navigate to
 
-  artifacts\contracts\nftMint.sol\nftMint.json
+        artifacts\contracts\nftMint.sol\nftMint.json
 
-  Contract address - will get from step 5
+  - Contract address - will get from step 5
 
 **8. Update src\App.js** 
 
-  Give your personalized details so that the webpage looks so..
+  - Give your personalized details so that the webpage looks so..
 
-  In mintNftHandler - update the mint function - same as your contract mint function
+  - In mintNftHandler - update the mint function - same as your contract mint function
 
 **9. Update App.css files** 
 
-  Style your webpage in src\App.css
+  - Style your webpage in src\App.css
 
 **10. Start the development server** 
 
-  npm start
+  - npm start
   
