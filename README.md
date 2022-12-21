@@ -51,21 +51,21 @@ scripts/deploy.js
 
 **5. Compile and Deploy** 
 
-  - npx hardhat compile
+       - npx hardhat compile
 
-  - npx hardhat run scripts/deploy.js --network goerli
+       - npx hardhat run scripts/deploy.js --network goerli
 
   OR
 
-  - Compile and deploy via Remix IDE.
+       - Compile and deploy via Remix IDE.
 
 **6. Frontend Implementation** 
 
-  - npx create-react-app nft\_mint\_frontend
+         - npx create-react-app nft\_mint\_frontend
 
-  - cd nft\_mint\_frontend
+         - cd nft\_mint\_frontend
 
-  - npm start
+         - npm start
 
 **7. Getting contract ABI and address** 
 
@@ -87,5 +87,5 @@ scripts/deploy.js
 
 **10. Start the development server** 
 
-  - npm start
+         - npm start
   
