@@ -1,0 +1,33 @@
+{
+  "name": "nft_mint_dapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amalendusuresh/NFT_MINT_DAPP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amalendusuresh/NFT_MINT_DAPP/issues"
+  },
+  "homepage": "https://github.com/amalendusuresh/NFT_MINT_DAPP#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.7",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.12.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/hardhat-upgrades": "^1.22.0",
+    "dotenv": "^16.0.3"
+  }
+}
