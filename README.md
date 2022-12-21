@@ -1,101 +1,91 @@
 # NFT Minting DApp
 
+**Building NFT Minting DApp from Scratch**
 
+**1. To start the project we will use the hardhat** 
 
-**Building NFT Minting DApp from Scratch** 
+  npm init -y
 
-\1. To start the project we will use the hardhat
+  npm add hardhat -D
 
-`    `npm init -y
+  npx hardhat
 
-`    `npm add hardhat -D
+  npx hardhat test
 
-`    `npx hardhat
+**2. Connect Metamask & Alchemy** 
 
-`    `npx hardhat test
+  Download and create a Metamask account.
 
+  Once you have an account, make sure to switch to the "Goerli Test Network" in the upper right.
 
-\2. Connect Metamask & Alchemy
+  Acquire some GoerliETH
+  
 
-`    `Download and create a Metamask account. 
+  From Alchemy's dashboard,
 
-`    `Once you have an account, make sure to switch to the “Goerli Test Network” in the upper right.
+    1. Hover over the Apps drop-down menu and choose Create App
 
-`    `Acquire some GoerliETH 
+    2. Provide a Name and Description for your app.
 
-`    `From Alchemy's dashboard, 
+    3. For Chain, select Ethereum and for Network select Goerli.
 
-`        `1. Hover over the Apps drop-down menu and choose Create App
+    4. Click the Create App button.
 
-`        `2. Provide a Name and Description for your app.
+    5. Click on app's View Key button in the dashboard and save the API KEY
 
-`        `3. For Chain, select Ethereum and for Network select Goerli.
+**3. Update .env file in the root directory** 
 
-`        `4. Click the Create App button.
+  API\_URL = "https://eth-goerli.g.alchemy.com/v2/your-api-key"
 
-`        `5. Click on app's View Key button in the dashboard and save the API KEY
+  PRIVATE\_KEY = "your-metamask-private-key"
 
+**4. Deployment script** 
 
-\3. Update .env file in the root directory
+scripts/deploy.js
 
-`    `API\_URL = "https://eth-goerli.g.alchemy.com/v2/your-api-key"
+  Provide baseTokenURI - the link of the image that is stored IPFS/cloud
 
-`    `PRIVATE\_KEY = "your-metamask-private-key"
+  Here, we used Pinata for storing the image.
 
+  Write the deployment script as per your contract details..
 
-\4. Deployment script - 
+**5. Compile and Deploy** 
 
+  npx hardhat compile
 
+  npx hardhat run scripts/deploy.js --network goerli
 
-`    `scripts/deploy.js
+  OR
 
-`        `Provide baseTokenURI - the link of the image that is stored IPFS/cloud
+  Compile and deploy via Remix IDE.
 
-`        `Here, we used Pinata for storing the image. 
+**6. Frontend Implementation** 
 
-`        `Write the deployment script as per your contract details..
+  npx create-react-app nft\_mint\_frontend
 
+  cd nft\_mint\_frontend
 
-\5. npx hardhat compile
+  npm start
 
-`   `npx hardhat run scripts/deploy.js --network goerli
+**7. Getting contract ABI and address** 
 
-`   `OR
+  To find your ABI file, go to your hardhat project and navigate to
 
-`   `Compile and deploy via Remix IDE. 
+  artifacts\contracts\nftMint.sol\nftMint.json
 
+  Contract address - will get from step 5
 
+**8. Update src\App.js** 
 
-\6. npx create-react-app nft\_mint\_frontend
+  Give your personalized details so that the webpage looks so..
 
-`   `cd  nft\_mint\_frontend
+  In mintNftHandler - update the mint function - same as your contract mint function
 
-`   `npm start
+**9. Update App.css files** 
 
+  Style your webpage in src\App.css
 
-\7. Getting contract ABI and address
+**10. Start the development server** 
 
-`    `To find your ABI file, go to your hardhat project and navigate to artifacts\contracts\nftMint.sol\nftMint.json
-
-`    `contract address - will get from step 5
-
-
-\8. Update src\App.js 
-
-`    `Give your personalized details so that the webpage looks so..
-
-`    `In mintNftHandler - update the mint function - same as your contract mint function
-
-
-\9. Update App.css files 
-
-`    `Style your webpage in src\App.css
-
-
-\10. npm start
-
-
-
-
-
-
+  npm start
+  
