@@ -92,5 +92,5 @@ scripts/deploy.js
 
 **10. Start the development server** 
 
-         - npm start
+         - npm start 
   
