@@ -7,17 +7,17 @@
 
 **1. To start the project ** 
 
-  --  nft_mint_frontend
+  --     nft_mint_frontend
  
  
  **2. This folder contains the frontend side of the Dapp, Now install the node modules ** 
  
- --  npm install
+ --      npm install
  
  
  **3. Now start the development server** 
  
- -- npm start
+ --      npm start
  
  * Now development server will be running *
 
