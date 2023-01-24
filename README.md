@@ -5,7 +5,7 @@
 
 
 
-**1. To start the project** 
+**1. To start the project, move to nft_mint_frontend folder** 
 
       cd nft_mint_frontend
  
@@ -15,11 +15,11 @@
       npm install
  
  
- **3. Now start the development server** 
+ **3. Start the development server** 
  
       npm start
  
  
- Now development server will be running
+ The development server will be running now...
 
 
