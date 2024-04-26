@@ -50,12 +50,12 @@
  
  * This folder contains the frontend side of the Dapp, Now install the node modules
  
-      npm install
+       npm install
  
  
  * Start the development server
  
-      npm start
+       npm start
  
  
 This will launch the React application on http://localhost:3000.
@@ -66,6 +66,7 @@ This will launch the React application on http://localhost:3000.
 
 
 **Contributing**
+
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
 * Fork the Project
