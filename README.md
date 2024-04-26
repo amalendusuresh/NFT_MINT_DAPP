@@ -14,6 +14,7 @@
 * ERC-721: A standard for representing ownership of non-fungible tokens.
   
 **Getting Started**
+
 *Prerequisites*
 * Node.js and npm (Node Package Manager)
 * MetaMask browser extension installed and connected to the Ethereum network
@@ -24,22 +25,51 @@
       git clone https://github.com/yourusername/ARA-NFT-Minting-DApp.git
       cd ARA-NFT-Minting-DApp
 
+* Install dependencies
 
-**1. To start the project, move to nft_mint_frontend folder** 
+      npm install
+
+* Set up environment variables
+  Create a .env file in the root directory and add the following variables:
+  
+     REACT_APP_INFURA_KEY = "YourInfuraProjectKey"
+     REACT_APP_PRIVATE_KEY = "YourEthereumWalletPrivateKey"
+
+* Compile the smart contracts
+
+     npx hardhat compile
+  
+* Deploy the smart contracts
+  
+     npx hardhat run scripts/deploy.js --network network_name
+
+* To start the project, move to nft_mint_frontend folder
 
       cd nft_mint_frontend
  
  
- **2. This folder contains the frontend side of the Dapp, Now install the node modules** 
+ * This folder contains the frontend side of the Dapp, Now install the node modules
  
       npm install
  
  
- **3. Start the development server** 
+ * Start the development server
  
       npm start
  
  
- The development server will be running now...
+This will launch the React application on http://localhost:3000.
+
+**How to Use**
+* Connect your MetaMask Wallet: Use the MetaMask extension to connect to the application.
+* Mint your NFT: Follow the on-screen instructions to mint your NFT. You can customize your NFT by uploading an image and adding a description.
 
 
+**Contributing**
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+* Fork the Project
+* Create your Feature Branch (git checkout -b feature/AmazingFeature)
+* Commit your Changes (git commit -m 'Add some AmazingFeature')
+* Push to the Branch (git push origin feature/AmazingFeature)
+* Open a Pull Request
