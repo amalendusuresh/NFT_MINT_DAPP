@@ -32,16 +32,16 @@
 * Set up environment variables
   Create a .env file in the root directory and add the following variables:
   
-     REACT_APP_INFURA_KEY = "YourInfuraProjectKey"
-     REACT_APP_PRIVATE_KEY = "YourEthereumWalletPrivateKey"
+      REACT_APP_INFURA_KEY = "YourInfuraProjectKey"
+      REACT_APP_PRIVATE_KEY = "YourEthereumWalletPrivateKey"
 
 * Compile the smart contracts
 
-     npx hardhat compile
+      npx hardhat compile
   
 * Deploy the smart contracts
   
-     npx hardhat run scripts/deploy.js --network network_name
+      npx hardhat run scripts/deploy.js --network network_name
 
 * To start the project, move to nft_mint_frontend folder
 
